@@ -82,7 +82,6 @@ class _HomeScreenState extends State<HomeScreen> {
           onResourceIncrement: (String resourceName) {
             setState(() {
               resources.update(resourceName, (value) => value + 1);
-              print(resourceName + ' ' + quete.resource);
               if (resourceName == quete.resource) {
                 quete.terminee = true;
               }
