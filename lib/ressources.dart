@@ -86,8 +86,8 @@ class _ListeRessourcesState extends State<ListeRessources> {
             onPressed: () => widget.onResourceIncrement('Minerai de cuivre'),
           ),
           // Afficher Charbon si disponible
-          if (widget.resources['Minerai de fer']! >= 10 &&
-              widget.resources['Minerai de cuivre']! >= 10)
+          if (widget.resources['Minerai de fer']! >= 1000 &&
+              widget.resources['Minerai de cuivre']! >= 1000)
             Ressource(
               color: const Color(0xFF000000),
               text: 'Charbon',
